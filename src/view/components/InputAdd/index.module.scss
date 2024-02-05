@@ -1,0 +1,33 @@
+.inputAdd {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  margin-bottom: 30px;
+  &Field {
+    border: 1px solid #b1b1b1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    font: 1rem/1.4 'Roboto', sans-serif;
+    background: #dbe2ef;
+    &::placeholder {
+      color: #7b7b7b;
+    }
+    &:focus {
+      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+      outline: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  &Button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    background: #3f72af url('./plus.svg') no-repeat center center;
+    transition: all 0.3s ease-out;
+    &:hover {
+      background-color: #385d8a;
+    }
+  }
+}

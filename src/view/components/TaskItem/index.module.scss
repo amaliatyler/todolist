@@ -1,0 +1,52 @@
+.taskItem {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+  margin-bottom: 15px;
+  background-color: #dbe2ef;
+  border-radius: 5px;
+  padding-right: 10px;
+  &Label {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-block: 12px;
+    padding-inline: 15px;
+    column-gap: 10px;
+  }
+  &Checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  &Edit,
+  &Remove,
+  &Save {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+    background: none no-repeat center center;
+  }
+
+  &Edit {
+    background-image: url('./images/edit.svg');
+  }
+
+  &Remove {
+    background-image: url('./images/trash.svg');
+  }
+
+  &Save {
+    background-image: url('./images/check.svg');
+  }
+  &Input {
+    padding: 5px;
+    font: 1rem/1em 'Roboto', sans-serif;
+    border: none;
+    background: none;
+    box-shadow: 0 4px 0 -3px #3f72af;
+    &:focus-visible {
+      outline: none;
+      box-shadow: #3f72af;
+    }
+  }
+}
